@@ -1,0 +1,15 @@
+{
+  "name": "Privacy",
+  "version": "1.0",
+  "description": "A privacy enhancement for Chrome",
+  "permissions": ["cookies","storage", "tabs", "nativeMessaging", "webRequest", "webRequestBlocking", "http://*/", "https://*/"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["blocked_domains.js", "background.js", "cookies.js"]
+  },
+
+  "manifest_version": 2
+
+}
